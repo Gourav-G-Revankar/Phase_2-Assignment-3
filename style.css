@@ -1,0 +1,123 @@
+/*----------requirement----------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*----------banner-section----------*/
+.banner-section {
+    width: 100%;
+    height: 100vh;
+    background: rgb(100, 100, 100);
+    margin: 0 auto;
+}
+
+.calculator-body {
+    width: 320px;
+    height: 560px;
+    background-color: #000000;
+    margin: 0 auto;
+    border-radius: 5px;
+    top: 100px;
+    position: relative;
+}
+
+#result-output {
+    background-color: #2e2c2c;
+    border-radius: 5px;
+    height: 160px;
+}
+
+#result-output h2 {
+    padding-top: 15px;
+    padding-left: 10px;
+    color: #ffffff;
+    font-size: 35px;
+}
+
+#history-block {
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 16px;
+    color: #cccccc;
+    text-align: right;
+    overflow-x: auto;
+}
+
+#output-block {
+    height: 60px;
+    margin: 10px 20px;
+    color: #ffffff;
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+    overflow-x: auto;
+}
+
+/*----------button-body----------*/
+.button-body {
+    height: 400px;
+}
+
+.operator,
+.number,
+.empty {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border: none;
+    border-radius: 50%;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.number,
+.empty,
+.operator {
+    background-color: #000000;
+}
+
+.number:focus,
+.empty:focus,
+.operator:focus {
+    outline: 0;
+}
+
+.number,
+.operator {
+    cursor: pointer;
+}
+
+.number:active,
+.operator:active {
+    font-size: 14px;
+}
+
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16){
+    background-color: #2e2c2c;
+    font-size: 20px;
+}
+
+button:nth-child(20){
+    background-color: #ff0062;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+/*----------Media Query----------*/
+
+@media screen and (max-width: 450px){
+    .calculator-body {
+        top: 50px;
+    }
+} 
